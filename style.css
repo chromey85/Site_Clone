@@ -1,0 +1,92 @@
+* {box-sizing: border-box;}
+/* Fonts from Nvidia Website */
+@font-face{font-family:"GeForce-alt";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-bold-alt-webfont.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-bold-alt-webfont.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-bold-alt-webfont.woff2") format("woff2"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-bold-alt-webfont.woff") format("woff");font-style:normal;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"GeForce-alt";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-light-alt-webfont.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-light-alt-webfont.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-light-alt-webfont.woff2") format("woff2"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce-light-alt-webfont.woff") format("woff");font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"GeForce";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_light-webfont.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_light-webfont.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_light-webfont.woff") format("woff");font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"GeForce";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_bold-webfont.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/geforce_bold-webfont.woff") format("woff");font-style:normal;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro.woff") format("woff");font-style:normal;font-weight:normal;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Bold.woff") format("woff");font-style:normal;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINPro";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Light.woff") format("woff");font-style:normal;font-weight:lighter;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINPro-Regular";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.woff") format("woff"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Regular.ttf") format("truetype");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINPro-Light";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.woff") format("woff"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.ttf") format("truetype");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+@font-face{font-family:"DINWebPro-Medium";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.woff") format("woff");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+
+.body {
+    display: flex;
+    border: rgb(3, 253, 3) solid 10pt;
+}
+
+.main-content {
+    display: flex;
+    border: springgreen solid 5px;
+}
+
+.box {
+    color: rgb(255, 255, 255);
+    font-size: 580px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    display: flex;
+    height: 580px;
+    width: 2650px;
+    background: #ff00ff;
+    justify-content:center;
+    /* flex: 1; */
+}
+
+.shop {
+
+}
+
+.gaming {
+
+}
+
+.lNews {
+
+}
+
+img {
+    border: red solid 5px;
+    
+}
+/* .carousel-banner {
+    display: flex;
+    height: fit-content;
+    border: black solid 5pt;
+} */
+
+/* Hero (carousel) images animation --START--*/
+  
+#carousel-banner img {
+    position: fixed;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+
+@keyframes cf3FadeInOut {
+0% {
+opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+#carousel-banner img.pic {
+animation-name: cf3FadeInOut;
+animation-timing-function: ease-in-out;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: alternate;
+}
+/* Hero (carousel) images animation --END-- */
+
