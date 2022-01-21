@@ -11,38 +11,64 @@
 @font-face{font-family:"DINPro-Light";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.woff") format("woff"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINPro-Light.ttf") format("truetype");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 @font-face{font-family:"DINWebPro-Medium";src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot");src:url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.eot?#iefix") format("embedded-opentype"),url("https://images.nvidia.com/etc/designs/nvidiaGDC/clientlibs_base/fonts/DINWebPro-Medium.woff") format("woff");-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 
-.body {
-    display: flex;
-    border: rgb(3, 253, 3) solid 10pt;
+.navBar {
+
 }
 
-.main-content {
+.all {
     display: flex;
-    border: springgreen solid 5px;
+    border: rgb(0, 0, 0) solid 5;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1024px;
+    
+}
+
+.banner {
+    display: flex;
+    border: rgb(0, 0, 0) solid 5;
 }
 
 .box {
-    color: rgb(255, 255, 255);
+    color: rgb(199, 20, 20);
+    background-color: khaki;
     font-size: 580px;
     font-family: 'Montserrat Alternates', sans-serif;
     display: flex;
-    height: 580px;
-    width: 2650px;
-    background: #ff00ff;
-    justify-content:center;
-    /* flex: 1; */
+    justify-content: center;
+    justify-self: center;
+    width: 100%;
+    max-width: 1280px;
+    flex-wrap: wrap;
+}
+
+/* .img1 {
+    display: flex;
+    background-image: url(https://www.nvidia.com/content/dam/en-zz/Solutions/homepage/mfg/gtc22-spring-web-nv-com-wmfg-reg-2560x580-d@1x.jpg); */
+    /* max-width: 100%;
+}*/
+
+.main-content {
+    display: flex;
+    border: rgb(255, 0, 0) solid 5;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 33.33%
 }
 
 .shop {
-
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
 }
 
 .gaming {
-
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
 }
 
 .lNews {
-
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
 }
 
 img {
@@ -59,11 +85,12 @@ img {
   
 #carousel-banner img {
     position: fixed;
-    left: 0;
+    left: auto;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
     -o-transition: opacity 1s ease-in-out;
     transition: opacity 1s ease-in-out;
+
 }
 
 @keyframes cf3FadeInOut {
@@ -81,7 +108,7 @@ opacity:0;
 }
 }
 
-#carousel-banner img.pic {
+#carousel-banner img.img1 {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
@@ -90,3 +117,46 @@ animation-direction: alternate;
 }
 /* Hero (carousel) images animation --END-- */
 
+.footer, .footer-wrapper, .page-footer-links, .page-footer-links-title, .page-footer-links-list, .co-info, .get-inv, .news, .subscribe, .social {
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
+}
+
+.footer {
+    flex-direction: column;
+}
+
+.footer-wrapper {
+    width: 100%;
+    justify-content: center;
+}
+
+.page-footer-links {
+    width: 33.33%
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    fle
+    width: 100%;
+}
+
+.page-footer-links-title {
+    
+}
+
+.page-footer-links-list {
+    
+}
+
+.co-info, .get-inv, .news {
+    
+}
+
+.global-footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
