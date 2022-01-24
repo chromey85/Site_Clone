@@ -21,9 +21,27 @@
     flex-direction: column;
     justify-content: center;
     max-width: 1024px;
-    
+    margin: 0px auto; 
 }
 
+a:link {
+    color:#76b900;
+}
+
+a:visited {
+    color:#76b900;
+}
+
+a:hover {
+    color: #76b900;
+  }
+
+  a:active {
+    color: #76b900;
+  }
+
+
+  
 .banner {
     display: flex;
     border: rgb(0, 0, 0) solid 5;
@@ -37,8 +55,8 @@
     display: flex;
     justify-content: center;
     justify-self: center;
-    width: 100%;
-    max-width: 1280px;
+    min-width: 1025px;
+    /* max-width: 1280px; */
     flex-wrap: wrap;
 }
 
@@ -50,25 +68,56 @@
 
 .main-content {
     display: flex;
-    border: rgb(255, 0, 0) solid 5;
-    flex-wrap: wrap;
-    flex-direction: row;
-    width: 33.33%
+    flex-direction: column;
+    max-width: 100%;
+    align-items:flex-start;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    border: 5px solid black;
+    padding-bottom: 10px;
+    border: 0px;
+    margin: 23px 30px 44px 30px;
+}
+
+.tile-pic {
+    display: flex;
+    width: 295px;
+    height: 166px;
+
 }
 
 .shop {
     display: flex;
-    border: rgb(0, 0, 0) solid 5px;
+    border: rgb(250, 1, 196) solid 5px;
+    /* justify-content: center; */
+    flex-direction: row;
+    width: 100%;
 }
 
 .gaming {
     display: flex;
     border: rgb(0, 0, 0) solid 5px;
+    flex-direction: row;
+    width: 100%;
 }
 
 .lNews {
     display: flex;
     border: rgb(0, 0, 0) solid 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.sNews{
+    display: flex;
+    width: 15%;
+    border: 5px solid black;
+    padding-bottom: 10px;
+    border: 0px;
+    margin: 23px 30px 44px 30px;
 }
 
 img {
@@ -84,7 +133,7 @@ img {
 /* Hero (carousel) images animation --START--*/
   
 #carousel-banner img {
-    position: fixed;
+    position: relative;
     left: auto;
     -webkit-transition: opacity 1s ease-in-out;
     -moz-transition: opacity 1s ease-in-out;
@@ -108,7 +157,7 @@ opacity:0;
 }
 }
 
-#carousel-banner img.img1 {
+#carousel-banner img.pic {
 animation-name: cf3FadeInOut;
 animation-timing-function: ease-in-out;
 animation-iteration-count: infinite;
@@ -119,7 +168,11 @@ animation-direction: alternate;
 
 .footer, .footer-wrapper, .page-footer-links, .page-footer-links-title, .page-footer-links-list, .co-info, .get-inv, .news, .subscribe, .social {
     display: flex;
-    border: rgb(0, 0, 0) solid 5px;
+    /* border: rgb(0, 0, 0) solid 5px; */
+    color: white;
+    border-bottom: white 1.500px;
+    padding-bottom: 12px;
+    background-color: black;
 }
 
 .footer {
@@ -127,20 +180,26 @@ animation-direction: alternate;
 }
 
 .footer-wrapper {
+    display: flex;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .page-footer-links {
-    width: 33.33%
+    display: flex;
+    width: 33.33%;
+    color: #76b900;
+    padding:0;
+    margin-bottom:50px;
+    margin-top:10px;
 }
 
 .contacts {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
-    fle
-    width: 100%;
+    width: 50%;
 }
 
 .page-footer-links-title {
@@ -153,6 +212,11 @@ animation-direction: alternate;
 
 .co-info, .get-inv, .news {
     
+}
+
+.global-footer-container {
+    color: black;
+    background-color: white;
 }
 
 .global-footer__links {
