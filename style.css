@@ -19,9 +19,11 @@
     display: flex;
     border: rgb(0, 0, 0) solid 5;
     flex-direction: column;
-    justify-content: center;
-    max-width: 1024px;
-    margin: 0px auto; 
+    /* justify-content: center; */
+    align-items: center;
+    max-width: 100%;
+    margin: 0px auto;
+    background-color: #eee; 
 }
 
 a:link {
@@ -55,7 +57,7 @@ a:hover {
     display: flex;
     justify-content: center;
     justify-self: center;
-    min-width: 1025px;
+    max-width: 100%;
     /* max-width: 1280px; */
     flex-wrap: wrap;
 }
@@ -69,7 +71,7 @@ a:hover {
 .main-content {
     display: flex;
     flex-direction: column;
-    max-width: 100%;
+    max-width: 1025px;
     align-items:flex-start;
 }
 
@@ -94,7 +96,7 @@ a:hover {
     border: rgb(250, 1, 196) solid 5px;
     /* justify-content: center; */
     flex-direction: row;
-    width: 100%;
+    width: 100%;    
 }
 
 .gaming {
@@ -121,7 +123,10 @@ a:hover {
 }
 
 img {
+    display: flex;
     border: red solid 5px;
+    width: auto;
+    max-height: 580px;
     
 }
 /* .carousel-banner {
@@ -177,12 +182,14 @@ animation-direction: alternate;
 
 .footer {
     flex-direction: column;
+    width: 100%;
 }
 
 .footer-wrapper {
     display: flex;
-    width: 100%;
-    justify-content: center;
+    flex-direction: row;
+    width: 33.33%;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
@@ -215,12 +222,52 @@ animation-direction: alternate;
 }
 
 .global-footer-container {
+    display: flex;
+    flex-direction: row;
     color: black;
     background-color: white;
+    padding: 30px;
 }
+
+ul.global-footer__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
 
 .global-footer__links {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
+    color:#1a1a1a;
+    font-weight:normal;
+    font-size:16px;
+    line-height:30px;
+    font-family:DINPro,Helvetica,Arial,Sans-Serif;
+    -webkit-padding-start:30px;
+    -webkit-margin-before:7px;
+    -webkit-margin-after:7px
+}
+
+.global-footer__copyright {
+    font-size:12px;
+    line-height:16px;
+    color:#666;
+    clear:both
+}
+
+.global-footer-logo {
+    display: flex;
+    width: 330px;
+    height: 60px;
+    margin: 0 auto;
+    /* display: block; */
+    float: left;
+    margin-bottom: 15px;
+}
+
+.global-footer__region__label{
+    display: flex;
+    float: right;
+    width: 50%;
 }
