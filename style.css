@@ -41,8 +41,6 @@ a:hover {
   a:active {
     color: #76b900;
   }
-
-
   
 .banner {
     display: flex;
@@ -71,14 +69,83 @@ a:hover {
 .main-content {
     display: flex;
     flex-direction: column;
-    max-width: 1025px;
-    align-items:flex-start;
+    max-width: 96%;
+    align-items: center;
+    flex-wrap: wrap;
 }
+
+.shop_container {
+    display: flex;
+}
+
+.shop {
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
+    /* flex-direction: row;
+    width: 100%; */
+}
+
+.shop_title {
+    display: flex;
+    /* font-size: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.gaming_container {
+    display: flex;
+}
+
+.gaming {
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
+    /* flex-direction: row;
+    width: 100%; */
+}
+
+.gaming_title {
+    display: flex;
+    /* font-size: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.news_container {
+    display: flex;
+}
+
+.news_title {
+    display: flex;
+    /* font-size: 100px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center; */
+}
+
+.lNews {
+    display: flex;
+    border: rgb(0, 0, 0) solid 5px;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+/* .sNews{
+    display: flex;
+    border: 5px solid black;
+    width: 15%;
+    padding-bottom: 10px;
+    border: 0px;
+    margin: 23px 30px 44px 30px;
+} */
 
 .tile {
     display: flex;
     flex-direction: column;
     border: 5px solid black;
+    width: 295px;
+    height: 270px;
     padding-bottom: 10px;
     border: 0px;
     margin: 23px 30px 44px 30px;
@@ -91,42 +158,11 @@ a:hover {
 
 }
 
-.shop {
-    display: flex;
-    border: rgb(250, 1, 196) solid 5px;
-    /* justify-content: center; */
-    flex-direction: row;
-    width: 100%;    
-}
-
-.gaming {
-    display: flex;
-    border: rgb(0, 0, 0) solid 5px;
-    flex-direction: row;
-    width: 100%;
-}
-
-.lNews {
-    display: flex;
-    border: rgb(0, 0, 0) solid 5px;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-
-.sNews{
-    display: flex;
-    width: 15%;
-    border: 5px solid black;
-    padding-bottom: 10px;
-    border: 0px;
-    margin: 23px 30px 44px 30px;
-}
-
 img {
     display: flex;
     border: red solid 5px;
-    width: auto;
-    max-height: 580px;
+    width: 295px;
+    max-height: 166px;
     
 }
 /* .carousel-banner {
